@@ -1,0 +1,105 @@
+body {
+    background-color: #BFBFBF;
+}
+
+@font-face {
+        font-family: terror_machine;
+        src: url(Terror\ Machine.ttf);
+}
+
+#titulo {
+    font-family: terror_machine;
+    color: white;
+    margin: 0%;
+    padding: 2%;
+    text-align: center;
+    font-size: 4vw;
+    background-color: #0D0D0D;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 4px 4px 6px rgba(243, 241, 241, 0.932);
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    color: white;
+    position: fixed;
+    display: flex;
+    width: 3vh;
+    height: 3vh;
+    cursor: pointer;
+    right: 2vh;
+    top: 18vh;
+    
+}
+
+.menu-options {
+    width: 130px;
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 220px;
+
+}
+
+#menu-toggle:checked + .menu-icon + .menu-options {
+    display: block;
+    
+}
+
+.menu-options a {
+    display: block;
+    
+}
+
+.menu-options a:hover {
+    color: #ff4500;
+    
+}
+
+#imagem {
+    width: 60px;
+}
+
+#subtitulo {
+    margin: 1%;
+    font-size: 3vw;
+    color: black;
+    text-shadow: 4px 4px 6px rgba(241, 9, 9, 0.932);
+    
+}
+
+.textPrincipal {
+    margin: 1%;
+    width: 90%;
+    font-size: 1.5vw;
+    color: black;
+    
+    
+}
+
+#imagemPagina {
+    width: 60%;
+    margin: 1%;
+
+}
+    
+    
+    
+   
+
